@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Header-name,tagline,Github Link,anchor navitaion -->
+    <header class="site header">
+        <div class="container">
+            <h1 class="site-name">AHMEDNOOR ABDULAHI</h1>
+            <P class="site-tagline">Front-End Developer &middot; HTML &middot; CSS &middot; JavaScript</P>
+
+        </div>
+        <a class="avatar-link"
+   href="https://github.com/ahmednoorabdulahi-ops"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Visit my GitHub profile">
+  <img style="width: 700px; height: 700px; border-radius: 100px ; border:10px solid #514
+  " src="./m.png" alt="">
+</a>
+        </svg>
+
+        <nav class="site-nav" aria-label="section navitaion">
+            <a href="#">About Me</a>
+            <a href="#">Projects</a>
+        </nav>
+        <div>
+            <header>
+                <main id="main">
+                    <!-- About me -Bio +skills -->
+                     <section class="section" id="about">
+                        <div class="container">
+                            <h2 class="section">About Me</h2>
+                            <div class="about-layout">
+                                <!-- Bio -->
+                                 <div class="about-bio">
+                                    <p>Hi, I'm <strong>AHMEDNOOR ABDULAHI</strong> — a front-end developer who loves
+              turning ideas into clean, responsive, and accessible websites. I
+              started with a curiosity about how web pages actually work and
+              quickly fell for the craft of writing markup and styles that feel
+              effortless to use</p>
+              <P>
+                I build with <strong>HTML</strong>, <strong>CSS</strong>, and
+              <strong>JavaScript</strong>, and I care as much about readable code
+              as I do about the final pixels. My most recent project is a fully
+              functional calculator app, and I'm currently deepening my
+              JavaScript skills while exploring responsive layout techniques.
+              </P>
+              <P>
+                When I'm not coding, I'm usually sketching interfaces, reading about
+              web accessibility, or helping friends debug their first projects.
+              </P>
+                                 </div>
+
+                                 <!-- Skills -->
+                                  <div aside class="about-skills" aria-labelledby="skills-heading">
+                                    <h3 class="skills-heading" id="skills-heading"> </h3>
+                                    <ul class="skills">
+                                        <li class="skill-group">
+                                            <h4>Languages</h4>
+                                            <ul class="skill-tags">
+                                                <li>HTML</li>
+                                                 <li>CSS</li>
+                                                  <li>JavaScript</li>
+
+                                            </ul>
+                                        </li>
+
+                                        <li class="skill-group">
+                                            <h4>layout & Styling</h4>
+                                            <ul class="skill-tags">
+                                                <li>Flexbox</li>
+                                                 <li>CSS Grid</li>
+                                                  <li>responsive Desing</li>
+
+                                            </ul>
+                                        </li>
+
+                                        <li class="skill-group">
+                                            <h4>Tools & Practices</h4>
+                                            <ul class="skill-tags">
+                                                <li>Git & Github</li>
+                                                 <li>VS COde</li>
+                                                  <li>Chrome Devtools</li>
+                                                  <li>Semantic HTML</li>
+
+                                            </ul>
+                                        </li>
+                                    
+                                    </ul>
+        
+                                  </div>
+                                
+                            </div>
+                        </div>
+
+                     </section>
+
+                     <!-- PROJECTS -RESPONSIVE GRID OF  PROJECT CARDS -->
+                      <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+
+            <!-- PROJECT1:CALCULATOR -->
+             <article class="project-card">
+
+            <figure class="project-figure">
+              <svg viewBox="0 0 400 300"
+                   role="img"
+                   aria-label="Screenshot of the Calculator app showing 1,234 on the display and a full keypad">
+                <!-- Backdrop -->
+                <rect width="400" height="300" fill="#e6edfd" />
+
+                <!-- Calculator body -->
+                <rect x="120" y="28" width="160" height="244" rx="18" fill="#1c2333" />
+
+                <!-- Display -->
+                <rect x="134" y="42" width="132" height="52" rx="8" fill="#2b3550" />
+                <text x="252" y="76" text-anchor="end"
+                      font-family="Consolas, monospace" font-size="22" fill="#7ee0c0">
+                  1,234
+                </text>
+
+                <!-- Keypad -->
+                <g font-family="Consolas, monospace" font-size="13"
+                   fill="#ffffff" text-anchor="middle">
+                  <!-- Row 1: C  ±  %  ÷ -->
+                  <rect x="134" y="102" width="30" height="28" rx="7" fill="#3a4666" />
+                  <text x="149" y="121">C</text>
+                  <rect x="168" y="102" width="30" height="28" rx="7" fill="#3a4666" />
+                  <text x="183" y="121">±</text>
+                  <rect x="202" y="102" width="30" height="28" rx="7" fill="#3a4666" />
+                  <text x="217" y="121">%</text>
+                  <rect x="236" y="102" width="30" height="28" rx="7" fill="#2f6fed" />
+                  <text x="251" y="121">÷</text>
+
+                  <!-- Row 2: 7  8  9  × -->
+                  <rect x="134" y="135" width="30" height="28" rx="7" fill="#2b3550" />
+                  <text x="149" y="154">7</text>
+                  <rect x="168" y="135" width="30" height="28" rx="7" fill="#2b3550" />
+                  <text x="183" y="154">8</text>
+                  <rect x="202" y="135" width="30" height="28" rx="7" fill="#2b3550" />
+                  <text x="217" y="154">9</text>
+                  <rect x="236" y="135" width="30" height="28" rx="7" fill="#2f6fed" />
+                  <text x="251" y="154">×</text>
+
+                  <!-- Row 3: 4  5  6  − -->
+                  <rect x="134" y="168" width="30" height="28" rx="7" fill="#2b3550" />
+                  <text x="149" y="187">4</text>
+                  <rect x="168" y="168" width="30" height="28" rx="7" fill="#2b3550" />
+                  <text x="183" y="187">5</text>
+                  <rect x="202" y="168" width="30" height="28" rx="7" fill="#2b3550" />
+                  <text x="217" y="187">6</text>
+                  <rect x="236" y="168" width="30" height="28" rx="7" fill="#2f6fed" />
+                  <text x="251" y="187">−</text>
+
+                  <!-- Row 4: 1  2  3  + -->
+                  <rect x="134" y="201" width="30" height="28" rx="7" fill="#2b3550" />
+                  <text x="149" y="220">1</text>
+                  <rect x="168" y="201" width="30" height="28" rx="7" fill="#2b3550" />
+                  <text x="183" y="220">2</text>
+                  <rect x="202" y="201" width="30" height="28" rx="7" fill="#2b3550" />
+                  <text x="217" y="220">3</text>
+                  <rect x="236" y="201" width="30" height="28" rx="7" fill="#2f6fed" />
+                  <text x="251" y="220">+</text>
+
+                  <!-- Row 5: 0 (wide)  .  = -->
+                  <rect x="134" y="234" width="64" height="28" rx="7" fill="#2b3550" />
+                  <text x="166" y="253">0</text>
+                  <rect x="202" y="234" width="30" height="28" rx="7" fill="#2b3550" />
+                  <text x="217" y="253">.</text>
+                  <rect x="236" y="234" width="30" height="28" rx="7" fill="#22a06b" />
+                  <text x="251" y="253">=</text>
+                </g>
+              </svg>
+            </figure>
+
+            <div class="project-body">
+              <h3>Calculator</h3>
+              <p>
+                A fully functional calculator built from scratch with vanilla
+                JavaScript. It handles the four basic operations, decimal input,
+                chained calculations, and clear/reset — plus keyboard support and
+                a guard against dividing by zero.
+              </p>
+
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS Grid</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="https://github.com/ahmednoorabdulahi-ops"
+                   target="_blank"
+                   rel="noopener noreferrer">Source code</a>
+                <a href="#"
+                   target="_blank"
+                   rel="noopener noreferrer">Live demo</a>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- ---------- Project 2: To-Do List ---------- -->
+          <article class="project-card">
+
+            <figure class="project-figure">
+              <svg viewBox="0 0 400 300"
+                   role="img"
+                   aria-label="Screenshot of the To-Do List app showing two completed tasks and two pending tasks">
+                <!-- Backdrop -->
+                <rect width="400" height="300" fill="#e6edfd" />
+
+                <!-- App window -->
+                <rect x="80" y="38" width="240" height="224" rx="16" fill="#ffffff" />
+
+                <!-- Window header -->
+                <rect x="80" y="38" width="240" height="48" rx="16" fill="#2f6fed" />
+                <rect x="80" y="70" width="240" height="16" fill="#2f6fed" />
+                <text x="100" y="69" font-family="Segoe UI, sans-serif"
+                      font-size="15" font-weight="700" fill="#ffffff">My Tasks</text>
+
+                <!-- Task 1 — completed -->
+                <rect x="100" y="106" width="18" height="18" rx="5" fill="#2f6fed" />
+                <path d="M104 115 l3.5 3.5 l6-7" stroke="#ffffff" stroke-width="2"
+                      fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                <text x="128" y="120" font-family="Segoe UI, sans-serif"
+                      font-size="13" fill="#8a93a8">Buy groceries</text>
+                <line x1="128" y1="116" x2="213" y2="116" stroke="#8a93a8" stroke-width="1.5" />
+
+                <!-- Task 2 — completed -->
+                <rect x="100" y="142" width="18" height="18" rx="5" fill="#2f6fed" />
+                <path d="M104 151 l3.5 3.5 l6-7" stroke="#ffffff" stroke-width="2"
+                      fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                <text x="128" y="156" font-family="Segoe UI, sans-serif"
+                      font-size="13" fill="#8a93a8">Finish calculator project</text>
+                <line x1="128" y1="152" x2="291" y2="152" stroke="#8a93a8" stroke-width="1.5" />
+
+                <!-- Task 3 — pending -->
+                <rect x="100" y="178" width="18" height="18" rx="5"
+                      fill="#ffffff" stroke="#c9d2e6" stroke-width="2" />
+                <text x="128" y="192" font-family="Segoe UI, sans-serif"
+                      font-size="13" fill="#1c2333">Read the CSS Grid docs</text>
+
+                <!-- Task 4 — pending -->
+                <rect x="100" y="214" width="18" height="18" rx="5"
+                      fill="#ffffff" stroke="#c9d2e6" stroke-width="2" />
+                <text x="128" y="228" font-family="Segoe UI, sans-serif"
+                      font-size="13" fill="#1c2333">Build my portfolio site</text>
+              </svg>
+            </figure>
+
+            <div class="project-body">
+              <h3>To-Do List App</h3>
+              <p>
+                A task manager that lets you add, complete, and delete tasks. Items
+                persist between visits using <code>localStorage</code>, and the
+                interface updates instantly as you type — no page reloads.
+              </p>
+
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>localStorage</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="https://github.com/ahmednoorabdulahi-ops"
+                   target="_blank"
+                   rel="noopener noreferrer">Go my my profile </a>
+                <a href="https:https://github.com/ahmednoorabdulahi-ops"
+                   target="_blank"
+                   rel="noopener noreferrer">to know more</a>
+              </div>
+            </div>
+
+          </article>
+
+        </div>
+      </div>
+    </section>
+                    
+                </figure>
+             </article>
+                      
+
+                </main>
+                 <!-- FOOTER
+       ========================================================== --> -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Ahmednoor. Built with HTML &amp; CSS.</p>
+    </div>
+  </footer>
+            </header>
+        </div>
+
+    </header>
+    
+</body>
+</html>
